@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Very Simple Web Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .media {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        audio {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Very Simple Web Server</h1>
+        
+        <div class="content">
+            <p>This is a simple web server built with Go using TCP sockets.</p>
+            
+            <div class="media">
+                <h2>Image Example</h2>
+                <img src="/images/image-1.jpg" alt="Sample Image">
+            </div>
+            
+            <div class="media">
+                <h2>Audio Example</h2>
+                <audio controls>
+                    <source src="/audio/sound-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <p>Test links:</p>
+            <ul>
+                <li><a href="/images/image-1.jpg">Direct link to image</a></li>
+                <li><a href="/audio/sound-1.mp3">Direct link to audio</a></li>
+                <li><a href="/nonexistent.html">404 Error example</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
